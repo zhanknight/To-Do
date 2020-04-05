@@ -7,21 +7,23 @@ body {
     flex-direction: column;
     background-color: blueviolet;
     max-width: 600px;
-    flex-wrap: nowrap;
     margin: auto;
     padding-top: 3em;
+    display:none; 
 }
 
 #titleDiv {
     background-color: blue;
 }
 
-#inputDiv {
-    background-color: red;
-}
-
 input {
     width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus{
+	background: #eeffee;
+	outline: none;
 }
 
 .listItem {
@@ -45,3 +47,6 @@ input {
     color: #999999;
 }
 
+.darkMode {
+    background-image: linear-gradient(to right, #222222, #a5a5a5);
+}
