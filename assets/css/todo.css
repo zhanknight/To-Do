@@ -1,24 +1,44 @@
 body {
-    background-image: linear-gradient(to right, red, yellow);
+    background-image: linear-gradient(to right, #3fc5f0, #42dee1);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    transition: 0.4s;
 }
 
 .flex-container {
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
+    background: rgba(0, 0, 0, 0.0);
     max-width: 600px;
     margin: auto;
-    padding-top: 3em;
+    margin-top: 5em;
     display:none; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#bottomButtons {
+    background-color: #6decb9;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 10px;
 }
 
 #titleDiv {
-    background-color: blue;
+    background-color: #6decb9;
+    font-size: 20px;
+    padding: 10px 0px 5px 10px
 }
 
 input {
     width: 100%;
+    height: 100%;
     box-sizing: border-box;
+    padding: 10px;
+    font-size: 17px;
+}
+
+#inputDiv {
+    height: 2em;
 }
 
 input:focus{
@@ -27,13 +47,17 @@ input:focus{
 }
 
 .listItem {
-    background-color: green;
+    background-color: #eef5b2;
     display: flex;
     justify-content: space-between;
+    padding: 10px 0px 5px 10px
+}
+
+.listItem:hover {
+    background-color: #eff6c2;
 }
 
 .listItem:hover > .delete {
-    background-color: crimson;
     transition: 0.3s;
     opacity: 1;
 }
@@ -47,6 +71,25 @@ input:focus{
     color: #999999;
 }
 
+button {
+        transition-duration: 0.1s;
+        height: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        background-color: #6decb9; 
+        border: none;
+        font-size: 12px;
+}
+
+button:hover {
+color: #999999
+  }
+
+button:focus {
+	outline: none;
+}
+
 .darkMode {
-    background-image: linear-gradient(to right, #222222, #a5a5a5);
+    filter: grayscale(0.9) invert(100%) brightness(0.9);
+    background-image: linear-gradient(to right, #222222, #838383);
 }
