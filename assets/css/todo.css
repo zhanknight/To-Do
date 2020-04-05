@@ -1,0 +1,47 @@
+body {
+    background-image: linear-gradient(to right, red, yellow);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    max-width: 600px;
+    flex-wrap: nowrap;
+    margin: auto;
+    padding-top: 3em;
+}
+
+#titleDiv {
+    background-color: blue;
+}
+
+#inputDiv {
+    background-color: red;
+}
+
+input {
+    width: 100%;
+}
+
+.listItem {
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+}
+
+.listItem:hover > .delete {
+    background-color: crimson;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.delete {
+    opacity: 0;
+}
+
+.finished {
+    text-decoration: line-through;
+    color: #999999;
+}
+
